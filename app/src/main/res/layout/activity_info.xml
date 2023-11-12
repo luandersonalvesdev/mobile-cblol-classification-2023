@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:padding="16dp"
+    tools:context=".InfoActivity">
+
+    <ImageView
+        android:id="@+id/info_iv_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/info_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="@color/main_text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/info_iv_logo"
+        app:layout_constraintTop_toTopOf="@+id/info_iv_logo" />
+
+    <TextView
+        android:id="@+id/info_tv_victory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/second_text"
+        app:layout_constraintStart_toStartOf="@+id/info_tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/info_tv_name" />
+
+    <TextView
+        android:id="@+id/info_tv_defeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="TextView"
+        android:textColor="@color/second_text"
+        app:layout_constraintStart_toStartOf="@+id/info_tv_victory"
+        app:layout_constraintTop_toBottomOf="@+id/info_tv_victory" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="JOGADORES"
+        android:textColor="@color/main_text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/info_iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/info_iv_logo" />
+
+    <TextView
+        android:id="@+id/info_tv_p1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/main_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/info_tv_p2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="TextView"
+        android:textColor="@color/main_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/info_tv_p1"
+        app:layout_constraintStart_toStartOf="@+id/info_tv_p1"
+        app:layout_constraintTop_toBottomOf="@+id/info_tv_p1" />
+
+    <TextView
+        android:id="@+id/info_tv_p3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="TextView"
+        android:textColor="@color/main_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/info_tv_p2"
+        app:layout_constraintStart_toStartOf="@+id/info_tv_p2"
+        app:layout_constraintTop_toBottomOf="@+id/info_tv_p2" />
+
+    <TextView
+        android:id="@+id/info_tv_p4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="TextView"
+        android:textColor="@color/main_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/info_tv_p3"
+        app:layout_constraintStart_toStartOf="@+id/info_tv_p3"
+        app:layout_constraintTop_toBottomOf="@+id/info_tv_p3" />
+
+    <TextView
+        android:id="@+id/info_tv_p5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="TextView"
+        android:textColor="@color/main_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/info_tv_p4"
+        app:layout_constraintStart_toStartOf="@+id/info_tv_p4"
+        app:layout_constraintTop_toBottomOf="@+id/info_tv_p4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
